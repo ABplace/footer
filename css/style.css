@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: inherit;
+}
+.footer__container {
+  max-width: 1200px;
+  padding: 0px 20px;
+}
+.footer__body {
+  border-top: 1px solid gainsboro;
+  display: grid;
+  grid-template-columns: 250px 1fr 290px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  column-gap: 40px;
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__logo {
+  margin: 0px 0px 20px 0px;
+}
+.footer__text {
+  color: ;
+  line-height: ;
+  margin: 0px 0px 20px 0px;
+}
+.footer__text:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.contacts-footer__item {
+  color: purple;
+}
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts-footer__item {
+  display: inline-flex;
+  align-items: center;
+  color: ;
+  line-height: ;
+  transition: all 0.3s ease 0s;
+}
+.contacts-footer__item::before {
+  margin: 0px 10px 0px 0px;
+}
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (any-hover: hover) {
+  .contacts-footer__item:hover {
+    color: orange;
+  }
+}
+@media (max-width: 964px) {
+  .footer__body{
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 290px;
+  }
+  .footer__main {
+    grid-column: span 2;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 724px) {
+  .footer__body {
+    display: block;
+  }
+}
+@media (min-width: 524px) {
+  .menu-footer {
+    display: flex; 
+  }
+  .menu-footer__column {
+  flex: 0 1 33.333%;
+}
+}
+.menu-footer__title {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: purple;
+  font-weight: 500;
+  transition: background-color 0.2s ease-out;
+}
+.footer-title {
+  font-size: 20px;
+  line-height: ;
+  color: purple;
+  font-weight: ;
+}
+.menu-footer__list li {
+  margin: 0px 0px 20px 0px;
+}
+.menu-footer__list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.menu-footer__link {
+  color: ;
+  transition: color 0.3s ease 0s;
+  line-height: ;
+  font-weight: ;
+}
+@media (any-hover: hover) {
+  .menu-footer__link:hover {
+    color: orange;
+  }
+}
+@media (max-width: 724px) {
+  .footer__menu {
+    margin-bottom: 40px;
+  }
+} 
+@media (max-width: 524px) {
+  .menu-footer {
+    display: block;
+  }
+  .menu-footer__title::after {
+    flex-shrink: 0;
+    width: 47px;
+    height: 47px;
+    margin-left: auto;
+    background-image: url(../icons/arrow-down.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+    transition: transform 0.2s ease-out;
+  }
+  .menu-footer__column_show .menu-footer__title::after,
+  .menu-footer__column_slidedown .menu-footer__title::after {
+    transform: rotate(-180deg);
+  }
+  .menu-footer__column:not(.menu-footer__column_show) .accordion__body {
+    display: none;
+  }
+}
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.accordion__content a {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+}
+.accordion__content a:hover {
+  background-color: #f8f9fa;
+}
+.subscribe__title {
+  margin: 0px 0px 20px 0px;
+}
+.subscribe__form {
+  display: flex;
+  position: relative;
+}
+.form__error {
+  position: absolute;
+  top: 100%;
+  margin: 3px 0px 0px 0px;
+  left: 15px;
+  color: orange;
+  font-size: 12px;
+}
+.subscribe__button {
+  flex: 0 0 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  margin: 0px 0px 0px 4px;
+}
+.subscribe__button:hover {
+  background-color: darkorange;
+}
+.subscribe__input {
+  width: 100%;
+  padding: 0px 12px;
+  background-color: aliceblue;
+  color: purple;
+  font-size: 20px;
+  outline: none;
+}
