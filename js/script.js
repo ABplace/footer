@@ -82,3 +82,7 @@ class ItcAccordion {
 new ItcAccordion(document.querySelector('.accordion'), {
     alwaysOpen: false
 });
+let isOperaExtreme = (navigator.userAgent.indexOf('Opera Mini/') > -1) && (navigator.userAgent.indexOf('Presto/') > -1);
+if (isOperaExtreme == true) {
+    alert("hello");
+}
